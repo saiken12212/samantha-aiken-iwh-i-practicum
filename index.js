@@ -22,7 +22,7 @@ const PROPERTIES = [
     { name: 'name', label: 'Name' },
     { name: 'genre', label: 'Genre' },
     { name: 'title', label: 'Title' },
-    { name: 'publication_date', label: 'Publication Date' }
+    { name: 'publication_date', label: 'Publication Date', type: 'date' }
 ];
 
 // Every API call sends these headers. The Authorization header carries your token.
