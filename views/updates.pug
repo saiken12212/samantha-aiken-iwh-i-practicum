@@ -11,5 +11,5 @@ html(lang="en")
             form(method="POST" action="/update-cobj")
                 each property in properties
                     label(for=property.name)= property.label
-                    input(type="text" id=property.name name=property.name required)
+                    input(type=(property.type || 'text'), id=property.name, name=property.name, required)
                 input(type="submit" value="Create record")
