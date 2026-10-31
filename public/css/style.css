@@ -56,3 +56,41 @@ input[type="submit"] {
     padding: .375rem 1rem;
     margin-top: 10px;
 }
+.table-wrapper {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table-wrapper th,
+.table-wrapper td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+.table-wrapper th {
+    background: #f5f8fa;
+}
+
+.button {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.form-wrapper label,
+.form-wrapper input {
+    display: block;
+    margin-top: 0.75rem;
+}
+
+.form-wrapper input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+}
