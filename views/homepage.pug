@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .table-wrapper
+            a.button(href="/update-cobj") Add to this table
+            h1 My Custom Objects
+            if records.length
+                table
+                    thead
+                        tr
+                            each property in properties
+                                th= property.label
+                    tbody
+                        each record in records
+                            tr
+                                each property in properties
+                                    td= record.properties[property.name]
+            else
+                p No records yet. Click "Add to this table" to create one.
