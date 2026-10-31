@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            a(href="/") Return to the homepage
+            h1 Add a New Record
+            form(method="POST" action="/update-cobj")
+                each property in properties
+                    label(for=property.name)= property.label
+                    input(type="text" id=property.name name=property.name required)
+                input(type="submit" value="Create record")
